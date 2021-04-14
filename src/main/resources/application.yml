@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boot?serverTimezone=Asia/Shanghai
+    username: root
+    password: 666
+  mail:
+    host: smtp.163.com
+    username: dai18439037494@163.com
+    password: LNEKRUIAEENYGBKM
+  redis:
+    database: 1
+  task:
+    execution:
+      pool:
+        core-size: 10
+
+
+# mybatis:
+#   config-location: classpath:mybatis/mybatis-config.xml
+
+#开启驼峰明明
+mybatis:
+
+
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
+
+
+
+#logging:
+#  level:
+#    com:
+#      shangma:
+#        cn: debug
+#          # controller: trace
+#          # mapper:
+#  file:
+#  # path: E://
+#    name: E://Neko.log
+#    max-size: 20MB
